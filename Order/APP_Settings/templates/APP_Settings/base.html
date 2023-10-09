@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'APP_Settings/css/style.css' %}">
+    <title>Document</title>
+    {% block links %}
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <a id="a_main" href="{% url 'main_page' %}">Головна</a>
+        <a id="a_contact" href="{% url 'contact_page' %}">Сторінка контактів</a>
+        <a id="a_shop_cart" href="{% url 'shop_cart_page' %}">Сторінка корзин, покупок і купівель</a>
+        <a id="a_product" href="{% url 'product_page' %}">Сторінка продуктів</a>
+        <a id="a_auth_reg" href="{% url 'auth_reg_page' %}">Авторизаційна-реєстраційна сторінка</a>
+    </header>
+
+    <main>
+        {% block content %}
+        
+        {% endblock %}
+    </main>
+
+    <footer>
+
+        <a class="footer_a" id="a_main" href="{% url 'main_page' %}">Головна</a>
+        <a class="footer_a" id="a_contact" href="{% url 'contact_page' %}">Сторінка контактів</a>
+        <a class="footer_a" id="a_shop_cart" href="{% url 'shop_cart_page' %}">Сторінка корзин, покупок і купівель</a>
+        <a class="footer_a" id="a_product" href="{% url 'product_page' %}">Сторінка продуктів</a>
+        <a class="footer_a" id="a_auth_reg" href="{% url 'auth_reg_page' %}">Авторизаційна-реєстраційна сторінка</a>
+    </footer>
+    
+
+</body>
+</html>
