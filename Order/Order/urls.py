@@ -20,7 +20,9 @@ import Main_page.views as main_views
 import Сontact_page.views as contact_views
 import Shopping_cart_page.views as shop_cart_views
 import Product_page.views as product_views
-import Authorization_Registration.views as auth_reg_views
+import Authorization_Registration.views as auth_views
+import Authorization_Registration.views as reg_views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,5 +30,6 @@ urlpatterns = [
     path('contact/', contact_views.contact_func, name='contact_page'),
     path('shop_cart/', shop_cart_views.shop_cart_func, name='shop_cart_page'),
     path('product/', product_views.product_func, name='product_page'),
-    path('auth_reg/', auth_reg_views.auth_reg_func, name='auth_reg_page'),
+    path('auth/', auth_views.auth_func, name='auth_page'),
+    path('reg/', reg_views.reg_func, name='reg_page'),
 ]

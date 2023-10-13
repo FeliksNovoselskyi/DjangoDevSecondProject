@@ -1,10 +1,12 @@
 header{
+    display: flex;
     background-color: rgb(216, 216, 216);
     border-bottom-right-radius: 20px;
-    padding: 10px 10px;
+    padding: 5px 5px;
     text-align: center;
     z-index: 10;
     margin-bottom: 5px;
+    justify-content: space-around;
 }
 
 main{
@@ -49,24 +51,65 @@ p{
     user-select: none;
 }
 
-#a_main:hover{
-    color: rgb(120, 39, 39);
+#danil_contacts{
+    display: flex;
+    width: 49%;
+    padding: 10px 10px;
+    background-color: rgb(238, 234, 149);
+    border: 0px solid rgb(238, 234, 149);
+    border-radius: 16px;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
-#a_contact:hover{
-    color: rgb(45, 110, 39);
+#ludmila_contacts{
+    display: flex;
+    width: 50%;
+    background-color: rgb(164, 231, 152);
+    border: 0px solid rgb(164, 231, 152);
+    border-radius: 16px;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
-#a_shop_cart:hover{
-    color: rgb(37, 53, 117);
+#sema_contacts{
+    display: flex;
+    width: 50%;
+    background-color: rgb(238, 149, 149);
+    border: 0px solid rgb(238, 149, 149);
+    border-radius: 16px;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
-#a_product:hover{
-    color: rgb(137, 131, 46);
+#feliks_contacts{
+    display: flex;
+    width: 50%;
+    background-color: rgb(149, 189, 238);
+    border: 0px solid rgb(149, 189, 238);
+    border-radius: 16px;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
-#a_auth_reg:hover{
-    color: rgb(87, 40, 123);
+
+.github_accounts{
+    color: rgb(17, 124, 231);
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+    margin-left: 5px;
+}
+
+.github_accounts:hover{
+    animation: сontactsHoverAnimation 1s infinite linear;
+}
+
+
+.pages_a:hover{
+    animation: pagesHoverAnimation 2s infinite linear;
 }
 
 .open_page {
@@ -93,6 +136,8 @@ p{
     text-align: center;
     margin: 12px;
     margin-top: 75px;
+    width: 330px;
+    height: 530px;
 }
 
 .footer_a{
@@ -102,4 +147,76 @@ p{
     font-size: 20px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 15px;
+}
+
+.product_text{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.add_buttons{
+    width: 150px;
+    height: 35px;
+    color: white;
+    padding: 15px 25px;
+    background-color: #1343c8;
+    border: 0px solid #1343c8;
+    border-radius: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+}
+
+.add_buttons:hover{
+    background-color: #10369f;
+    animation: addButtonsAnimation 1.5s ease-out;
+}
+
+@keyframes addButtonsAnimation {
+    0% {
+        background-color: #10369f;
+        padding: 15px 25px;
+    }
+
+    50% {
+        background-color: #315bcf;
+        padding: 15px 40px;
+    }
+
+    100% {
+        background-color: #10369f;
+        padding: 15px 25px;
+    }
+
+}
+
+@keyframes pagesHoverAnimation {
+    0% {
+        color: rgb(38, 38, 38);
+    }
+
+    50% {
+        color: rgb(34, 95, 186);
+    }
+
+    100% {
+        color: rgb(38, 38, 38);
+    }
+
+}
+
+@keyframes сontactsHoverAnimation {
+    0% {
+        color: rgb(17, 124, 231);
+    }
+
+    50% {
+        color: rgb(5, 62, 120);
+    }
+
+    100% {
+        color: rgb(17, 124, 231);
+    }
+
 }
