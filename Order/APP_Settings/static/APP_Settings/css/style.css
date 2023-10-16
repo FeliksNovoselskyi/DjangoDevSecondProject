@@ -43,6 +43,14 @@ h1{
     user-select: none;
 }
 
+h2{
+    color: rgb(60, 59, 59);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+
 p{
     color: rgb(48, 46, 46);
     font-weight: bold;
@@ -51,46 +59,68 @@ p{
     user-select: none;
 }
 
-#danil_contacts{
+#contacts{
     display: flex;
-    width: 49%;
-    padding: 10px 10px;
-    background-color: rgb(238, 234, 149);
-    border: 0px solid rgb(238, 234, 149);
-    border-radius: 16px;
-    align-items: center;
-    margin-bottom: 5px;
-}
-
-#ludmila_contacts{
-    display: flex;
-    width: 50%;
-    background-color: rgb(164, 231, 152);
-    border: 0px solid rgb(164, 231, 152);
-    border-radius: 16px;
-    align-items: center;
-    margin-bottom: 5px;
-}
-
-#sema_contacts{
-    display: flex;
-    width: 50%;
-    background-color: rgb(238, 149, 149);
-    border: 0px solid rgb(238, 149, 149);
-    border-radius: 16px;
-    align-items: center;
-    margin-bottom: 5px;
-}
-
-#feliks_contacts{
-    display: flex;
-    width: 50%;
+    width: 15%;
+    padding: 5px 5px;
     background-color: rgb(149, 189, 238);
     border: 0px solid rgb(149, 189, 238);
     border-radius: 16px;
     align-items: center;
     margin-bottom: 5px;
+    margin-top: 75px;
+    margin-left: 12px;
+    flex-direction: column;
 }
+
+#github_contact{
+    width: 60px;
+    height: 60px;
+}
+
+#mobile_contact{
+    width: 65px;
+    height: 65px;
+}
+
+#address_contact{
+    width: 60px;
+    height: 60px;
+}
+
+#main_div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: transparent;
+    border: 5px dotted rgb(201, 201, 201);
+    border-radius: 16px;
+    height: 530px;
+    margin-top: 75px;
+}
+
+#main_image{
+    width: 695px;
+    height: 510px;
+    border: 5px double rgb(201, 201, 201);
+    border-radius: 24px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#text-div{
+    display: inline-block;
+    width: 1200px;
+    height: 500px;
+    padding: 5px 5px;
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+    background-color: transparent;
+    border: 5px double rgb(201, 201, 201);
+    border-radius: 16px;
+    margin: 5px;
+}
+
 
 
 .github_accounts{
@@ -109,7 +139,7 @@ p{
 
 
 .pages_a:hover{
-    animation: pagesHoverAnimation 2s infinite linear;
+    animation: pagesHoverAnimation 1.5s infinite linear;
 }
 
 .open_page {
@@ -173,6 +203,17 @@ p{
     animation: addButtonsAnimation 1.5s ease-out;
 }
 
+.address_mobile_contacts{
+    text-decoration: none;
+    color: rgb(38, 38, 38);
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 5px;
+    margin-right: 15px;
+    user-select: none;
+}
+
 @keyframes addButtonsAnimation {
     0% {
         background-color: #10369f;
@@ -180,7 +221,7 @@ p{
     }
 
     50% {
-        background-color: #315bcf;
+        background-color: #1d47bb;
         padding: 15px 40px;
     }
 
@@ -197,7 +238,7 @@ p{
     }
 
     50% {
-        color: rgb(34, 95, 186);
+        color: rgb(26, 72, 140);
     }
 
     100% {
