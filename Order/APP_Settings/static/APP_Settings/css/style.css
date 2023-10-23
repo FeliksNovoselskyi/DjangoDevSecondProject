@@ -9,7 +9,17 @@ header{
     margin-bottom: 5px;
     justify-content: space-around;
     animation: headerStartAnimation 1s ease-out;
+    transition: all 300ms ease-in-out;
     margin-top: 0px;
+}
+
+header:hover{
+    background-color: rgb(202, 202, 202);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 1px 2px;
+    box-shadow: 0px 0px 6px rgb(38, 38, 38);
 }
 
 main{
@@ -180,7 +190,6 @@ p{
     color: rgb(47, 42, 42);
     background-color: transparent;
     border-radius: 16px;
-    
 }
 
 #reg_submit{
@@ -199,9 +208,17 @@ p{
     color: rgb(47, 42, 42);
     background-color: transparent;
     border-radius: 16px;
-    
 }
 
+.check-mark-img{
+    width: 50px;
+    transition: all 750ms ease-in-out;
+    /* height: auto; */
+}
+
+.check-mark-img:hover{
+    rotate: z 360deg;
+}
 
 .github_accounts{
     color: rgb(17, 124, 231);
@@ -233,7 +250,17 @@ p{
     z-index: 10;
     margin-bottom: 5px;
     text-align: center;
+    transition: all 300ms ease-in-out;
 }
+
+.open_page:hover{
+    background-color: rgb(198, 196, 196);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 9.5%;
+    padding: 1px 2px;
+    box-shadow: 0px 0px 6px rgb(38, 38, 38);
+} 
 
 .products-img{
     width: 330px;
@@ -304,6 +331,16 @@ p{
     user-select: none;
 }
 
+.github_a{
+    color: rgb(38, 38, 38);
+    transition: all 200ms ease-in-out;
+}
+
+.github_a:hover{
+    color: rgb(17, 14, 14);
+    text-shadow: 0px 0px 1px rgb(17, 14, 14);
+}
+
 .auth_text {
     font-size: 32px;
     text-align: center;
@@ -364,6 +401,56 @@ p{
     color: rgb(176, 173, 173);
     box-shadow: 0px 0px 10px rgb(47, 42, 42);
 }
+
+.added_product{
+    width: 150px;
+    height: 35px;
+    color: white;
+    padding: 15px 25px;
+    background-color: #1343c8;
+    border: 0px solid #1343c8;
+    border-radius: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    cursor: default;
+    transition: all 200ms ease-in-out;
+}
+
+.added_product:hover{
+    padding: 13.5px 20px;
+    background-color: #1343c8;
+    border: 0px solid #1343c8;
+}
+
+.basket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check-mark-cont {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: rgb(201, 198, 198);
+    border: 5px double rgb(173, 169, 169);
+    border-radius: 20px;
+    padding: 0px 5px;
+    margin: 12px;
+    margin-top: 75px;
+    width: 330px;
+    height: 530px;
+    transition: all 200ms ease-in-out;
+}
+
+.check-mark-cont:hover{
+    background-color: rgb(179, 174, 174);
+    border: 5px double rgb(138, 135, 135);
+    box-shadow: 0px 0px 10px rgb(38, 38, 38);
+    border-radius: 24px;
+}
+
 
 ::placeholder {
     color: rgb(176, 173, 173);
