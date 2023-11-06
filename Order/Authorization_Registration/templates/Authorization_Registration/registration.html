@@ -11,28 +11,39 @@
         <p>Сторінка реєстрації</p>
     </div>
 
-    <form method="post" class="auth_reg_form">
+    <form method="POST" class="auth_reg_form">
         {% csrf_token %}
         <input type="text" 
-                name="login"  
+                name="username"  
                 class="reg_text" 
-                placeholder="Логін">
+                placeholder="Логін"
+                value="{{username}}"
+                >
 
         <input type="password" 
                 name="password"  
                 class="reg_text" 
-                placeholder="Пароль">
+                placeholder="Пароль"
+                value="{{password}}">
 
         <input type="email" 
                 name="email"  
                 class="reg_text" 
-                placeholder="Пошта">
+                placeholder="Пошта"
+                value="{{email}}"
+                >
                 
         <input type="text" 
                 name="phone"  
                 class="reg_text" 
-                placeholder="Телефон">
+                placeholder="Телефон"
+                value="{{phone}}"
+                >
 
+        {% if error %}
+            <p class="error">{{error}}</p>
+        {% endif %}
+        
         <input type="submit" id="reg_submit" value="Підтвердити">
     </form>
     

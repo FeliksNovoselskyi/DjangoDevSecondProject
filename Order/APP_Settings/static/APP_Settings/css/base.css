@@ -212,6 +212,11 @@ p{
     margin-left: 39.75%;
 }
 
+.error{
+    color: rgb(123, 15, 15);
+    font-size: 24px;
+    user-select: none;
+}
 
 ::placeholder {
     color: rgb(176, 173, 173);
